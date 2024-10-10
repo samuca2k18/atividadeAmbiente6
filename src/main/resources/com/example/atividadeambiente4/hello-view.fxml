@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="631.0" prefWidth="810.0" spacing="20.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.atividadeambiente4.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <!-- Botões principais de funções -->
+    <AnchorPane prefHeight="350.0" prefWidth="770.0">
+        <!-- Primeira linha de botões -->
+        <Button fx:id="quickSortBtn" layoutX="40.0" layoutY="50.0" mnemonicParsing="false" onAction="#botaoQuickSort" text="QuickSort" />
+        <Button fx:id="mdc" layoutX="180.0" layoutY="50.0" mnemonicParsing="false" onAction="#botaoMdc" text="MDC" />
+        <Button fx:id="fibonacci" layoutX="320.0" layoutY="50.0" mnemonicParsing="false" onAction="#botaoFibonacci" text="Fibonacci" />
+        <Button fx:id="trocaVariaveis" layoutX="460.0" layoutY="50.0" mnemonicParsing="false" onAction="#botaoTrocaDeVariaveis" text="Troca Variáveis" />
+
+        <!-- Segunda linha de botões -->
+        <Button fx:id="contagem" layoutX="40.0" layoutY="120.0" mnemonicParsing="false" onAction="#botaoContagem" text="Contagem" />
+        <Button fx:id="somaDeNumeros" layoutX="180.0" layoutY="120.0" mnemonicParsing="false" onAction="#botaoSomaDeNumeros" text="Soma de Números" />
+        <Button fx:id="serieInfinita" layoutX="320.0" layoutY="120.0" mnemonicParsing="false" onAction="#botaoCalcularSerie" text="Série Infinita" />
+        <Button fx:id="fatorial" layoutX="460.0" layoutY="120.0" mnemonicParsing="false" onAction="#botaoCalcularFatorial" text="Fatorial" />
+
+        <!-- Terceira linha de botões -->
+        <Button fx:id="inverterDigitos" layoutX="40.0" layoutY="190.0" mnemonicParsing="false" onAction="#botaoInverterDigitos" text="Inverter Dígitos" />
+        <Button fx:id="numeroPrimo" layoutX="180.0" layoutY="190.0" mnemonicParsing="false" onAction="#botaoPrimo" text="Número Primo" />
+        <Button fx:id="conversaoBase" layoutX="320.0" layoutY="190.0" mnemonicParsing="false" onAction="#botaoConverterBase" text="Conversão de Base" />
+        <Button fx:id="caractereParaNumero" layoutX="460.0" layoutY="190.0" mnemonicParsing="false" onAction="#botaoConverterCaracter" text="Caractere para Número" />
+    </AnchorPane>
+
+    <!-- Área de resultados -->
+    <AnchorPane prefHeight="250.0" prefWidth="770.0">
+        <!-- Rótulo para exibir o resultado do QuickSort -->
+        <Label fx:id="resultadoQuickSort" layoutX="40.0" layoutY="20.0" text="Resultado do QuickSort" visible="false" />
+
+        <!-- Botão para voltar -->
+        <Button fx:id="voltar" layoutX="40.0" layoutY="20.0" mnemonicParsing="false" onAction="#botaoVoltar" text="Voltar" visible="false" />
+
+        <!-- Rótulos e campos de entrada para outras funções -->
+        <Label fx:id="labelIgual" layoutX="160.0" layoutY="90.0" text="=" visible="false" />
+        <TextField fx:id="entrada1" layoutX="100.0" layoutY="85.0" prefHeight="26.0" prefWidth="50.0" visible="false" />
+        <TextField fx:id="entrada2" layoutX="220.0" layoutY="85.0" prefHeight="26.0" prefWidth="50.0" visible="false" />
+
+        <!-- Botão para exibir resultado do MDC -->
+        <Button fx:id="resultadoMdc" layoutX="50.0" layoutY="192.0" mnemonicParsing="false" onAction="#botaoResultadoMdc" prefHeight="26.0" prefWidth="100.0" text="Resultado MDC" visible="false" />
+
+        <!-- Label para exibir o resultado de várias funções -->
+        <Label fx:id="resultadoMdc2" layoutX="564.0" layoutY="1.0" prefHeight="194.0" prefWidth="199.0" text="Resultado" />
+
+        <!-- Botões de resultado para Primo e Fibonacci -->
+        <Button fx:id="resultadoPrimo" layoutX="220.0" layoutY="130.0" mnemonicParsing="false" onAction="#botaoResultadoPrimo" prefHeight="26.0" prefWidth="100.0" text="Resultado Primo" visible="false" />
+        <Button fx:id="resultadoFibonacci" layoutX="340.0" layoutY="130.0" mnemonicParsing="false" onAction="#botaoResultadoFibonacci" text="Resultado Fibonacci" visible="false" />
+        <Button fx:id="resultadoContagem" layoutX="493.0" layoutY="130.0" mnemonicParsing="false" onAction="#botaoResultadoContagem" text="Resultado Contagem" visible="false" />
+        <Button fx:id="resultadoSoma" layoutX="36.0" layoutY="192.0" mnemonicParsing="false" onAction="#botaoResultadoSoma" prefHeight="26.0" prefWidth="127.0" text="Resultado Soma" visible="false" />
+        <Button fx:id="resultadoSerie" layoutX="194.0" layoutY="193.0" mnemonicParsing="false" onAction="#botaoResultadoSerie" prefHeight="26.0" prefWidth="140.0" text="Resultado Serie Infinita" visible="false" />
+        <Button fx:id="calcularFatorial" layoutX="410.0" layoutY="180.0" mnemonicParsing="false" onAction="#botaoResultadoFatorial" text="resultado fatorial" visible="false" />
+        <Button fx:id="resultadoInverterDigitos" layoutX="537.0" layoutY="156.0" mnemonicParsing="false" onAction="#botaoResultadoInverter" text="Resultado Da inversão" visible="false" />
+        <Button fx:id="resultadoConversao" layoutX="467.0" layoutY="194.0" mnemonicParsing="false" onAction="#botaoResultadoConversao" text="Resultado Conversao" visible="false" />
+        <Button fx:id="botaoResultadoCactere" layoutX="456.0" layoutY="53.0" mnemonicParsing="false" onAction="#botaoResultadoConversaoCaractere" text="resultado caractere" visible="false" />
+    </AnchorPane>
+
+    <VBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="30.0" prefWidth="770.0">
+        <children>
+            <Button fx:id="abrirJanelaJS" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#abrirJanelaJS" text="Abrir Janela JS" />
+        </children>
+    </VBox>
+</VBox>
